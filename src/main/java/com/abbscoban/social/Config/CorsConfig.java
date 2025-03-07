@@ -10,7 +10,7 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**") // Tüm yollar için CORS ayarını yapıyoruz
-                .allowedOrigins("https://social-frontend-mh8p.onrender.com") // React uygulamanızın origin adresi
+                .allowedOrigins("https://social-frontend-production.up.railway.app") // React uygulamanızın origin adresi
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH") // İzin verilen HTTP metodları
                 .allowedHeaders("*") // İzin verilen başlıklar
                 .allowCredentials(true); // Kimlik doğrulama bilgilerini (cookie, header) almak için
